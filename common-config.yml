@@ -15,8 +15,8 @@ mybatis:
   mapper-locations:                    # 设置MyBatis中Mapper.xml文件的位置,SpringBoot中的Mapper.xml文件必须出现在src/main/resource目录下
   - classpath:mapper/*.xml
   type-aliases-package: com.springcloud.entity   # 设置Myabatis实体类的位置
-  configuration:                                 # 设置Mbatis开启驼峰命名规则
-    map-underscore-to-camel-case: true  
+  configuration:                                 
+    map-underscore-to-camel-case: true           # 设置Mbatis开启驼峰命名规则
     #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl      
 
 pagehelper:                                      # 设置pagehelper分页插件
